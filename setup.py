@@ -15,7 +15,7 @@ setup(
     keywords="keyword keyword",
     url="CHANGEME",
     packages=['CHANGEME', 'CHANGEME'],
-    long_description=read('README'),
+    long_description=read('README.md'),
     classifiers=[
         #"Development Status :: 3 - Alpha",
         #"Topic :: Utilities",
