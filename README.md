@@ -1,7 +1,8 @@
 python-project
 ==============
 
-A boilerplate project for creating virtualenv and virtualenvwrapper based projects. 
+A boilerplate project for creating Python based projects. Requires
+virtualenv and virtualenvwrapper.
 
 
 Usage and Installation
