@@ -12,7 +12,13 @@ Add this to your postmkvirtualenv hook (i.e.: /home/andrew/.virtualenvs/postmkvi
 
 ```shell
 
+#!/bin/bash
+# This hook is run after a new virtualenv is activated.
+
 # Build from boilerplate
+
+echo "Downloading boilerplate project"
+
 mv $VIRTUAL_ENV ${VIRTUAL_ENV}_
 git clone https://github.com/andrewjsledge/python-project.git $VIRTUAL_ENV
 mv $VIRTUAL_ENV ${VIRTUAL_ENV}__
@@ -21,14 +27,27 @@ cp -R ${VIRTUAL_ENV}__/.git ${VIRTUAL_ENV}/.git
 rm -rf ${VIRTUAL_ENV}__
 
 cd $VIRTUAL_ENV && git reset --hard HEAD && git pull && cd -
+rm -rf ${VIRTUAL_ENV}/.git
+
+echo "Setting up VCS settings"
 
 mv ${VIRTUAL_ENV}/gitignore ${VIRTUAL_ENV}/.gitignore
 mv ${VIRTUAL_ENV}/svnignore ${VIRTUAL_ENV}/.svnignore
 
-pip install -r ${VIRTUAL_ENV}/requirements.txt
+echo "Installing packages"
 
-# Cleanup
-rm -rf ${VIRTUAL_ENV}/.git
+pip install -q -r ${VIRTUAL_ENV}/requirements.txt
+
+echo "Building virtual development machine"
+# shut down any existing machine
+vagrant halt
+BNAME=`basename $VIRTUAL_ENV`
+cd ${VIRTUAL_ENV}/vm && vagrant init ${BNAME}-precise32 http://files.vagrantup.com/precise32.box && vagrant up && cd -
+
+# clean up Vagrantfile
+sed -i '/^  #/d' ${VIRTUAL_ENV}/vm/Vagrantfile
+sed -i '/^\s*$/d' ${VIRTUAL_ENV}/vm/Vagrantfile
+sed -i 's/^end/  config.vm.network :private_network, ip: "192.168.99.99"\n  config.vm.network :forwarded_port, guest: 80, host: 8080\nend/g' ${VIRTUAL_ENV}/vm/Vagrantfile
 
 ```
 
