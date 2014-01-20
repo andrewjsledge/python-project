@@ -1,0 +1,10 @@
+[program:myapp]
+command=/srv/myapp/bin/gunicorn_start.sh
+directory=/srv/myapp
+user=webapp
+process_name="myapp"
+autostart=true
+environment=PATH="/srv/myapp/bin:${PATH}"
+autorestart=true
+stdout_logfile=/srv/myapp/logs/gunicorn_supervisor.log
+redirect_stderr=true
