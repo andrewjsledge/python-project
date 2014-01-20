@@ -1,8 +1,34 @@
 import sys
 
-from fabric.api import local
+from fabric.api import local, run, env
 
 SCM = "git"
+SOURCE_DIRECTORY = "/home/andrew/work/applications/python-project-boilerplate/src"
+
+#### VM SETUP
+
+
+def setup_development():
+    development_setup()
+    env.host = '192.168.99.99'
+    env.user = 'andrew'
+    env.password = 'alpha'
+
+
+#### HOST SETUP
+
+
+def development_setup():
+    env.host = '192.168.99.99'
+    env.user = 'vagrant'
+    env.password = 'vagrant'
+
+    if run("who | grep andrew").failed:
+        run("useradd -d /home/andrew -g admin -G sudo -p alpha andrew")
+        local("ssh-copy-id 192.168.99.99")
+
+
+#### COMMIT
 
 
 def get_commit_message():
@@ -26,3 +52,6 @@ def commit():
         git_commit()
     elif SCM is "svn":
         svn_commit()
+
+
+#### PUSH
