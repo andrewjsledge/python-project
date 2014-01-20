@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+SCM	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/scm.py	/^class SCM(Task):$/;"	c	inherits:Task
+__all__	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/__init__.py	/^__all__ = ['git', 'svn']$/;"	v
+__init__	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/scm.py	/^    def __init__(self, scm_path, *args, **kwargs):$/;"	m	class:SCM	access:public
+checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def checkout(self, directory):$/;"	f	access:public
+checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def checkout(self, directory):$/;"	f	access:public
+clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def clone(self, directory):$/;"	f	access:public
+clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def clone(self, directory):$/;"	f	access:public
+commit	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def commit(self):$/;"	f	access:public
+commit	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def commit(self):$/;"	f	access:public
+get_commit_message	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/scm.py	/^    def get_commit_message(self):$/;"	m	class:SCM	access:public
+pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def pull(self, directory):$/;"	f	access:public
+pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def pull(self, directory):$/;"	f	access:public
+remote_checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_checkout(self, directory):$/;"	f	access:public
+remote_checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_checkout(self, directory):$/;"	f	access:public
+remote_clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_clone(self, directory):$/;"	f	access:public
+remote_clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_clone(self, directory):$/;"	f	access:public
+remote_pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_pull(self, directory):$/;"	f	access:public
+remote_pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_pull(self, directory):$/;"	f	access:public
+remote_update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_update(self, directory):$/;"	f	access:public
+remote_update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_update(self, directory):$/;"	f	access:public
+update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def update(self, directory):$/;"	f	access:public
+update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def update(self, directory):$/;"	f	access:public

@@ -1,0 +1,114 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APPS	/home/andrew/work/applications/python-project-boilerplate/fabfile/config.py	/^APPS = {'myapp':$/;"	v
+DEV	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^DEV = config.HOSTS['development']['ip']$/;"	v
+HOSTS	/home/andrew/work/applications/python-project-boilerplate/fabfile/config.py	/^HOSTS = {'development':$/;"	v
+HOST_PKGS	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^HOST_PKGS = config.HOSTS['development']['packages']$/;"	v
+HOST_PKGS	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^HOST_PKGS = config.HOSTS['production']['packages']$/;"	v
+HOST_PKGS	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^HOST_PKGS = config.HOSTS['staging']['packages']$/;"	v
+PASSWD	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^PASSWD = config.HOSTS['development']['password']$/;"	v
+PASSWD	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^PASSWD = config.HOSTS['production']['password']$/;"	v
+PASSWD	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^PASSWD = config.HOSTS['staging']['password']$/;"	v
+PROD	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^PROD = config.HOSTS['production']['ip']$/;"	v
+PY_PKGS	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^PY_PKGS = config.HOSTS['development']['python_packages']$/;"	v
+PY_PKGS	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^PY_PKGS = config.HOSTS['production']['python_packages']$/;"	v
+PY_PKGS	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^PY_PKGS = config.HOSTS['staging']['python_packages']$/;"	v
+STAGING	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^STAGING = config.HOSTS['staging']['ip']$/;"	v
+USER	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^USER = config.HOSTS['development']['user']$/;"	v
+USER	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^USER = config.HOSTS['production']['user']$/;"	v
+USER	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^USER = config.HOSTS['staging']['user']$/;"	v
+__all__	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/__init__.py	/^__all__ = ['development', 'staging', 'production', ]$/;"	v
+__all__	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/__init__.py	/^__all__ = []$/;"	v
+__all__	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^__all__ = ['user_add', 'user_remove', 'group_add', 'group_remove',$/;"	v
+app_bootstrap	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def app_bootstrap(app=None, user=None):$/;"	f	access:public
+app_bootstrap	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def app_bootstrap(app=None, user=None):$/;"	f	access:public
+app_bootstrap	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def app_bootstrap(app=None, user=None):$/;"	f	access:public
+app_clean	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def app_clean(app):$/;"	f	access:public
+app_clean	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def app_clean(app):$/;"	f	access:public
+app_clean	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def app_clean(app):$/;"	f	access:public
+apt_install	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def apt_install(pkg):$/;"	f	access:public
+apt_install	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def apt_install(pkg):$/;"	f	access:public
+apt_install	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def apt_install(pkg):$/;"	f	access:public
+apt_remove	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def apt_remove(pkg):$/;"	f	access:public
+apt_remove	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def apt_remove(pkg):$/;"	f	access:public
+apt_remove	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def apt_remove(pkg):$/;"	f	access:public
+apt_update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def apt_update():$/;"	f	access:public
+apt_update	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def apt_update():$/;"	f	access:public
+apt_update	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def apt_update():$/;"	f	access:public
+apt_upgrade	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def apt_upgrade(pkg):$/;"	f	access:public
+apt_upgrade	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def apt_upgrade(pkg):$/;"	f	access:public
+apt_upgrade	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def apt_upgrade(pkg):$/;"	f	access:public
+apt_upgrade_all	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def apt_upgrade_all():$/;"	f	access:public
+apt_upgrade_all	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def apt_upgrade_all():$/;"	f	access:public
+apt_upgrade_all	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def apt_upgrade_all():$/;"	f	access:public
+bootstrap	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def bootstrap():$/;"	f	access:public
+bootstrap	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def bootstrap():$/;"	f	access:public
+bootstrap	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def bootstrap():$/;"	f	access:public
+checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def checkout(directory):$/;"	f	access:public
+checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def checkout(directory, scm_path):$/;"	f	access:public
+clean	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def clean():$/;"	f	access:public
+clean	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def clean():$/;"	f	access:public
+clean	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def clean():$/;"	f	access:public
+clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def clone(directory):$/;"	f	access:public
+clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def clone(directory):$/;"	f	access:public
+commit	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def commit():$/;"	f	access:public
+commit	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def commit():$/;"	f	access:public
+create_regular_user	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def create_regular_user(host, username):$/;"	f	access:public
+create_system_user	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def create_system_user(username):$/;"	f	access:public
+create_user_virtualenv	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def create_user_virtualenv(username):$/;"	f	access:public
+create_virtualenv	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/app.py	/^def create_virtualenv(path, user, python_pkgs):$/;"	f	access:public
+create_virtualenv	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/application.py	/^def create_virtualenv(path, user, python_pkgs):$/;"	f	access:public
+deploy	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def deploy():$/;"	f	access:public
+deploy	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def deploy():$/;"	f	access:public
+finalize	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/application.py	/^def finalize(path, system_user=None):$/;"	f	access:public
+get_commit_message	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/__init__.py	/^def get_commit_message():$/;"	f	access:public
+get_max_system_user_id	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def get_max_system_user_id():$/;"	f	access:public
+get_scm_path	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/__init__.py	/^def get_scm_path():$/;"	f	access:public
+get_users_current_groups	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def get_users_current_groups(username):$/;"	f	access:public
+group_add	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def group_add(group):$/;"	f	access:public
+group_remove	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def group_remove(group):$/;"	f	access:public
+install_2_virtualenv	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/app.py	/^def install_2_virtualenv(path, pkgs=None, reqs_file_path=None):$/;"	f	access:public
+pip_install	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def pip_install(pkg):$/;"	f	access:public
+pip_install	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def pip_install(pkg):$/;"	f	access:public
+pip_install	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def pip_install(pkg):$/;"	f	access:public
+pip_install_2_virtualenv	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/application.py	/^def pip_install_2_virtualenv(path, pkgs=None, reqs_file_path=None):$/;"	f	access:public
+pip_remove	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def pip_remove(pkg):$/;"	f	access:public
+pip_remove	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def pip_remove(pkg):$/;"	f	access:public
+pip_remove	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def pip_remove(pkg):$/;"	f	access:public
+pip_upgrade	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def pip_upgrade(pkg):$/;"	f	access:public
+pip_upgrade	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def pip_upgrade(pkg):$/;"	f	access:public
+pip_upgrade	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def pip_upgrade(pkg):$/;"	f	access:public
+pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def pull(directory):$/;"	f	access:public
+pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def pull(directory):$/;"	f	access:public
+put_max_system_user_id	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def put_max_system_user_id(i):$/;"	f	access:public
+reboot	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def reboot():$/;"	f	access:public
+reboot	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def reboot():$/;"	f	access:public
+reboot	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def reboot():$/;"	f	access:public
+remote_checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_checkout(directory):$/;"	f	access:public
+remote_checkout	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_checkout(directory, scm_path):$/;"	f	access:public
+remote_clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_clone(directory):$/;"	f	access:public
+remote_clone	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_clone(directory):$/;"	f	access:public
+remote_pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_pull(directory):$/;"	f	access:public
+remote_pull	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_pull(directory):$/;"	f	access:public
+remote_update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def remote_update(directory):$/;"	f	access:public
+remote_update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def remote_update(directory):$/;"	f	access:public
+scm_funcs	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/app.py	/^def scm_funcs(scm_type):$/;"	f	access:public
+scm_funcs	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/application.py	/^def scm_funcs(scm_type):$/;"	f	access:public
+scm_path	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/__init__.py	/^scm_path = None$/;"	v
+set_scm_path	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/__init__.py	/^def set_scm_path(path):$/;"	f	access:public
+update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/git.py	/^def update(directory):$/;"	f	access:public
+update	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/scm/svn.py	/^def update(directory):$/;"	f	access:public
+uptime	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def uptime():$/;"	f	access:public
+uptime	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def uptime():$/;"	f	access:public
+uptime	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def uptime():$/;"	f	access:public
+user_add	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def user_add(host, username, usertype=None):$/;"	f	access:public
+user_group_add	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def user_group_add(username, group):$/;"	f	access:public
+user_group_remove	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def user_group_remove(username, group):$/;"	f	access:public
+user_remove	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/users/__init__.py	/^def user_remove(username):$/;"	f	access:public
+who	/home/andrew/work/applications/novologic-novologic-syslog/fabfile/development.py	/^def who():$/;"	f	access:public
+who	/home/andrew/work/applications/python-project-boilerplate/fabfile/production.py	/^def who():$/;"	f	access:public
+who	/home/andrew/work/applications/python-project-boilerplate/fabfile/staging.py	/^def who():$/;"	f	access:public
