@@ -44,6 +44,9 @@ vagrant halt
 BNAME=`basename $VIRTUAL_ENV`
 cd ${VIRTUAL_ENV}/vm && vagrant init ${BNAME}-precise32 http://files.vagrantup.com/precise32.box && vagrant up && cd -
 
+mv ${VIRTUAL_ENV}/utils/* ${VIRTUAL_ENV}/bin/
+rm -rf ${VIRTUAL_ENV}/utils
+
 # clean up Vagrantfile
 sed -i '/^  #/d' ${VIRTUAL_ENV}/vm/Vagrantfile
 sed -i '/^\s*$/d' ${VIRTUAL_ENV}/vm/Vagrantfile
