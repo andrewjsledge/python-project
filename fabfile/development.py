@@ -201,7 +201,27 @@ def app_bootstrap(app=None, user=None):
     # start it up!
     sudo("supervisorctl reread")
     sudo("supervisorctl update")
-    sudo("supervisorctl start logger")
+    sudo("supervisorctl start %s" % app)
+
+
+@task
+@hosts(DEV)
+def app_update(app=None):
+    if not app:
+        print 'app is required'
+        sys.exit()
+
+    env.warn_only = True
+
+    deploy_dir = config.APPS[app]['deploy_dir']
+    scm_type = config.APPS[app]['scm_type']
+    scm_path = config.APPS[app]['scm_path']
+
+    remote_update, remote_checkout = application.scm_funcs(scm_type)
+    with cd(deploy_dir):
+        remote_checkout(deploy_dir, scm_path)
+
+    sudo("supervisorctl restart %s" % app)
 
 
 @task
