@@ -199,7 +199,7 @@ def app_bootstrap(app=None, user=None):
     # start it up!
     sudo("supervisorctl reread")
     sudo("supervisorctl update")
-    sudo("supervisorctl start %s" % app)
+    sudo("supervisorctl start all")
 
 
 @task
@@ -219,7 +219,8 @@ def app_update(app=None):
     with cd(deploy_dir):
         remote_checkout(deploy_dir, scm_path)
 
-    sudo("supervisorctl restart %s" % app)
+    sudo("supervisorctl stop all")
+    sudo("supervisorctl start all")
 
 
 @task
